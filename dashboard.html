@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMedia</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <h1>ShareMedia</h1>
+        <nav>
+            <a href="profile.html">Profile</a>
+            <a href="media.html">Explore</a>
+            <a href="dashboard.html" class="btn">Dashboard</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container dashboard-container">
+        <!-- Upload Section -->
+        <section id="upload-section" class="upload-box">
+            <h2>Create a Post</h2>
+            <textarea id="media-caption" placeholder="What's on your mind?" rows="3"></textarea>
+            <input type="file" id="media-file" accept="image/*,video/*">
+            <button class="btn" onclick="uploadMedia()">Post</button>
+        </section>
+
+        <!-- Recent Uploads -->
+        <section id="recent-uploads" class="feed">
+            <h2>Your Recent Uploads</h2>
+            <div id="mediaGrid" class="media-grid">
+                <!-- Sample Upload -->
+                <div class="media-post">
+                    <div class="user-info">
+                        <img src="images/user1.jpg" alt="User Profile" class="profile-pic">
+                        <p class="username">Cee Wire</p>
+                        <span class="post-time">Just now</span>
+                    </div>
+                    <p class="post-caption">Excited to share my latest travel adventure! 🌍</p>
+                    <div class="media-content">
+                        <img src="video/SampleVideo_720x480_1mb.mp4" alt="Sample Upload">
+                    </div>
+                </div>
+                <!-- End of Sample Upload -->
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 ShareMedia. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

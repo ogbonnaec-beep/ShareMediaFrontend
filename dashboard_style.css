@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF5FF;    /* very light purple */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Header Styles */
+header {
+    background-color: #5D3FD3;    /* royal purple */
+    padding: 15px 0;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: #FFD700;               /* gold */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD700;               /* gold links */
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: #FFD700;
+    color: #5D3FD3;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(93, 63, 211, 0.1);  /* subtle purple shadow */
+    text-align: left;
+}
+
+.upload-box textarea,
+.upload-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5D3FD3;     /* purple border */
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.upload-box textarea:focus,
+.upload-box input:focus {
+    outline: none;
+    border-color: #FFD700;         /* gold on focus */
+}
+
+.upload-box button {
+    background-color: #FFD700;     /* gold */
+    color: #5D3FD3;                /* purple text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.upload-box button:hover {
+    background-color: #E6C200;     /* darker gold */
+}
+
+/* Recent Uploads */
+.feed {
+    margin-top: 20px;
+}
+
+.media-post {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(93, 63, 211, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #5D3FD3;                /* purple */
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FFD700;     /* gold frame */
+}
+
+.media-content img,
+.media-content video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #5D3FD3;
+}
+
+.media-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-btn,
+.comment-btn,
+.rate-btn {
+    background-color: #FFD700;     /* gold buttons */
+    color: #5D3FD3;                /* purple text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.like-btn:hover,
+.comment-btn:hover,
+.rate-btn:hover {
+    background-color: #E6C200;     /* darker gold */
+}
+
+/* Footer */
+footer {
+    background-color: #5D3FD3;    /* royal purple */
+    color: #FFD700;               /* gold text */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
